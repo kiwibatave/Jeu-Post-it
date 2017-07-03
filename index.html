@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+    <title>POST-IT WARS</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.jpeg" alt="">
+      </div>
+      <div class="titre">
+      <h1>POST-IT WARS</h1>
+      </div>
+    </header>
+    <main>
+      <aside class="left">
+        <div class="color">
+            <p class="pick" id="rouge"></p>
+            <p class="pick" id="vert"></p>
+            <p class="pick" id="jaune"></p>
+            <p class="pick" id="bleu"></p>
+            <p class="pick" id="orange"></p>
+            <p class="pick" id="marron"></p>
+            <p class="pick" id="blanc"></p>
+            <p class="pick" id="noir"></p>
+            <p class="pick" id="violet"></p>
+            <p class="pick" id="rose"></p>
+          <script>
+          $(document).ready(function() {
+            $(".pick").draggable();
+          });
+          </script>
+          </div>
+        <div id="container">
+        </div>
+        <script>
+        $(function() {
+          $(".pick").draggable({
+           drag: function(e, ui) {
+            var color = $(this).css('background-color');
+              $('.unit').droppable({
+               drop : function(e, ui){
+                 $(this).css('background-color', color);
+                 }
+                })
+             },
+            revert : 'valid',
+          snap : '.unit'
+          })
+        });
+           </script>
+      <aside class="right">
+
+      </aside>
+    </main>
+  </body>
+</html>

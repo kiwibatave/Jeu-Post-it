@@ -1,0 +1,87 @@
+html {
+  height: auto;
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+}
+body {
+  height: auto;
+  width: 100%;
+}
+main {
+  height: auto;
+  width: 100%;
+  display: flex;
+}
+h1 {
+  text-align: inherit;
+  margin: auto;
+  font-family: 'Press Start 2P', cursive;
+}
+.titre {
+  height: auto;
+  width: 100%;
+  margin: auto;
+  background-image: url(./back.jpeg);
+}
+.right {
+  height: auto;
+  width: 50vw;
+}
+.left {
+  height: auto;
+  width: 50vw;
+}
+#container {
+   background-color: grey;
+   height: 576px;
+   width: 576px;
+}
+.unit {
+   background-color: #C5C5C5;
+   height: 30px;
+   width: 30px;
+   margin: 3px;
+   float: left;
+}
+.color {
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+.pick {
+  height: 4vh;
+  width: 2vw;
+}
+#rouge  {
+  background-color: red;
+}
+#vert  {
+  background-color: green;
+}
+#jaune  {
+  background-color: yellow;
+}
+#bleu  {
+  background-color: blue;
+}
+#orange  {
+  background-color: orange;
+}
+#marron  {
+  background-color: brown;
+}
+#blanc  {
+  background-color: white;
+}
+#noir  {
+  background-color: black;
+}
+#violet  {
+  background-color: purple;
+}
+#rose  {
+  background-color: pink;
+}
